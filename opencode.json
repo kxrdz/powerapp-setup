@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "skills": {
+    "paths": [
+      ".opencode/plugins/code-apps/skills",
+      ".opencode/plugins/power-automate/skills"
+    ]
+  },
+  "mcp": {
+    "flowagent": {
+      "type": "local",
+      "command": ["node", ".opencode/plugins/power-automate/server/mcp.mjs"],
+      "enabled": true
+    },
+    "microsoft-learn": {
+      "type": "remote",
+      "url": "https://learn.microsoft.com/api/mcp",
+      "enabled": true
+    }
+  }
+}
